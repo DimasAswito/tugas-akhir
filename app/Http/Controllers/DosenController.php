@@ -30,7 +30,6 @@ class DosenController extends Controller
         // Simpan data baru
         Dosen::create($request->all());
 
-        // Redirect kembali dengan pesan sukses
         return redirect()->route('dosen.index')
                          ->with('success', 'Data dosen berhasil ditambahkan.');
     }
